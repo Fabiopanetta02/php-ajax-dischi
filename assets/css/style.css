@@ -1,41 +1,41 @@
+/* common */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-y: hidden;
-}
-
-header {
+  }
+  body {
+    overflow: hidden;
+  }
+  /* Header */
+  header {
     height: 100px;
     background-color: #2e3a46;
   }
-
-.logo {
+  .logo {
     line-height: 100px;
-}
-  
-main {
+  }
+  /* Main */
+  main {
     background-color: #1e2d3b;
     height: calc(100vh - 200px);
     overflow: auto;
-}
-
-.card {
+  }
+  .card {
     background-color: #2e3a46;
-}
-
-.card-img-top {
+  }
+  .card-img-top {
     width: 90%;
     padding-top: 1rem;
-}
-
-footer {
+  }
+  /* Footer */
+  footer {
     height: 100px;
     background-color: #2e3a46;
-}
-
-.copyright {
+  }
+  .copyright {
     line-height: 100px;
     vertical-align: middle;
     text-align: center;
-}
+  }
+  
