@@ -1,3 +1,7 @@
+<?php
+include 'includes/data/data.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,8 +23,49 @@
 </head>
 <body>
     <div id="app">
-
+        <header id="site_header">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="logo text-start align-middle">
+                    <img width="50" src="img/favicon.ico" alt="" />
+                </div>
+            </div>
+            <!-- /.container -->
+        </header>
+        <main id="site_main">
+            <div class="container">
+                <div class="row row-cols-2 row-cols-sm-3 row-cols-xl-6 py-5 justify-content-center">
+                    <?php foreach ($discs as $disk): ?>
+                        <div class="col py-3">
+                            <div class="card h-100 align-items-center" >
+                                <img src="<?php echo $disk['poster']; ?>" class="card-img-top" alt="<?php echo $disk['title']; ?>" />
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title text-white">
+                                            <?php echo strtoupper($disk['title']); ?>
+                                        </h5>
+                                        <p class="card-text text-muted m-0">
+                                            <?php echo $disk['author']; ?>
+                                        </p>
+                                        <p class="card-text text-muted">
+                                            <?php echo $disk['year']; ?>
+                                        </p>
+                                    </div>
+                            </div>
+                            <!-- ./card -->
+                        </div>
+                        <!-- ./col -->
+                    <?php endforeach;?>
+                </div>
+                <!-- ./row -->
+            </div>
+        </main>
+        <footer id="site_footer">
+            <div class="container">
+                <div class="copyright">
+                    <small class="text-white">&copy;Boolean</small>
+                </div>
+            </div>
+            <!-- /.container -->
+        </footer>
     </div>
-    
 </body>
 </html>

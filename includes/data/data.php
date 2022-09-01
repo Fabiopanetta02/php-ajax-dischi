@@ -1,5 +1,4 @@
 <?php
-
     $discs = [
         [
             'title' => 'New Jersey',
@@ -44,3 +43,5 @@
             'genre' => 'Rock'
         ]
     ];
+?>
+

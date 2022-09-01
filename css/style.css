@@ -2,6 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+header {
+    height: 100px;
+    background-color: #2e3a46;
+  }
+
+.logo {
+    line-height: 100px;
 }
   
 main {
@@ -17,4 +27,15 @@ main {
 .card-img-top {
     width: 90%;
     padding-top: 1rem;
+}
+
+footer {
+    height: 100px;
+    background-color: #2e3a46;
+}
+
+.copyright {
+    line-height: 100px;
+    vertical-align: middle;
+    text-align: center;
 }
