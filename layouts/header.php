@@ -4,6 +4,4 @@
         <img width="50" src="./assets/img/spotify-logo.png" alt="" />
       </div>
     </div>
-    <!-- /.container -->
   </header>
-  <!-- /#site_header -->
